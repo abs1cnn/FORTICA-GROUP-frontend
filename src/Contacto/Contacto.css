@@ -85,6 +85,45 @@ p {
   background-color: #a6141a;
 }
 
+.contacto-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.whatsapp-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.whatsapp-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.whatsapp-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57;
+}
+
 @media (max-width: 768px) {
   .contacto-container {
     padding: 20px;
@@ -95,6 +134,15 @@ p {
   }
 
   .btn-submit {
+    font-size: 14px;
+  }
+
+  .whatsapp-section {
+    margin-top: 20px;
+  }
+
+  .btn-whatsapp {
+    width: 100%; /* Hace que el botón ocupe todo el ancho en pantallas pequeñas */
     font-size: 14px;
   }
 }

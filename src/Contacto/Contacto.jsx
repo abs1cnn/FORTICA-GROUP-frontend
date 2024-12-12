@@ -19,15 +19,21 @@ const Contacto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes hacer el envío del formulario, por ejemplo, usando fetch o Axios
     console.log(formData);
   };
+
+  const whatsappNumber = "5493541339665"; // Reemplaza con tu número de WhatsApp
+  const whatsappMessage = "Hola, estoy interesado en contactar con ustedes."; 
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section className="contacto">
       <div className="contacto-container">
         <h1>Contacto</h1>
         <p>Si tienes alguna pregunta, no dudes en escribirnos.</p>
+        
+        {/* Formulario de contacto */}
         <form onSubmit={handleSubmit} className="formulario-contacto">
           <div className="campo">
             <label htmlFor="nombre">Nombre</label>
@@ -79,6 +85,20 @@ const Contacto = () => {
           </div>
           <button type="submit" className="btn-submit">Enviar</button>
         </form>
+
+        {/* Sección de WhatsApp */}
+        <div className="whatsapp-section">
+          <h2>Contacto Rápido por WhatsApp</h2>
+          <p>También puedes enviarnos un mensaje directamente por WhatsApp:</p>
+          <a 
+            href={whatsappLink} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-whatsapp"
+          >
+            Enviar mensaje a WhatsApp
+          </a>
+        </div>
       </div>
     </section>
   );

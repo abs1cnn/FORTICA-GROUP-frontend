@@ -1,0 +1,16 @@
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  width: 37px;
+  height: 35px;
+  object-fit: contain;
+}
