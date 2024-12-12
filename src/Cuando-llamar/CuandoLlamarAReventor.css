@@ -4,10 +4,13 @@
   padding: 0 20px;
 }
 
-h2 {
-  font-size: 24px;
+#titulo-cuando-llamar {
+  font-size: 30px;
   margin-bottom: 20px;
   font-weight: bold;
+}
+#descrip-cuando-llamar {
+  font-size: 18px;
 }
 
 .grid {
@@ -21,10 +24,10 @@ h2 {
 }
 
 .grid-item {
-  background-color: #f8dbdb;
-  font-size: 20px;
+  background-color: #e0e0e0;
+  font-size: 22px;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,11 +40,11 @@ h2 {
 .grid-item i {
   font-size: 50px;
   margin-bottom: 15px;  /* Espacio entre el icono y el texto */
-  color: #cb1c23;  /* Color de los iconos */
+  color: #ffffff;  /* Color de los iconos */
 }
 
 .grid-item:hover {
-  background-color: #e0e0e0;
+  background-color: #e63d3d;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
