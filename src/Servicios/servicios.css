@@ -1,0 +1,57 @@
+/* Estilos generales para la sección de servicios */
+.servicios {
+  padding: 50px 0;
+  background-color: #cb1c22b4;
+  text-align: center;
+}
+
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.servicio .icono {
+  font-size: 40px;
+  color: #cb1c23;
+  margin-bottom: 20px;
+}
+
+.servicio h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.servicio p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .servicios-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios-container {
+    grid-template-columns: 1fr;
+  }
+}

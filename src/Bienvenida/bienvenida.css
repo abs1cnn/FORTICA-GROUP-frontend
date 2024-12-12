@@ -1,0 +1,57 @@
+/* Estilos generales para la sección de bienvenida */
+.bienvenida {
+  background-color: #cb1c23;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.bienvenida-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bienvenida h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.bienvenida p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.btn-bienvenida {
+  background-color: #fff;
+  color: #cb1c23;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bienvenida:hover {
+  background-color: #e6e6e6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .bienvenida h1 {
+    font-size: 28px;
+  }
+
+  .bienvenida p {
+    font-size: 16px;
+  }
+
+  .btn-bienvenida {
+    font-size: 14px;
+  }
+}

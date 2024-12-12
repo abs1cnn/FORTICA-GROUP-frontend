@@ -1,0 +1,100 @@
+/* Estilos generales para el cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.contacto-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #cb1c23;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.campo label {
+  font-size: 14px;
+  color: #333;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #cb1c23;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #a6141a;
+}
+
+@media (max-width: 768px) {
+  .contacto-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+  }
+}

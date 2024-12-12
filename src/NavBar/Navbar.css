@@ -1,0 +1,75 @@
+/* General Navbar styles */
+.navbar {
+  background-color: #cb1c23;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none; /* Oculto en pantallas grandes */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu.menu-open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Oculta el menú en pantallas pequeñas */
+    flex-direction: column; /* Menú vertical */
+    position: absolute;
+    top: 60px; /* Debajo del navbar */
+    right: 20px; /* Pegado al lado derecho */
+    background-color: #cb1c23;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 999;
+  }
+
+  .menu.menu-open {
+    display: flex; /* Muestra el menú cuando está abierto */
+  }
+
+  .hamburger {
+    display: block; /* Muestra el botón en pantallas pequeñas */
+  }
+}
