@@ -41,7 +41,7 @@ const CuandoLlamarAReventor = () => {
 
   return (
     <div className="container">
-      <h2 id='titulo-cuando-llamar'>¿Cuándo llamar a Reventor?</h2>
+      <h2 id='titulo-cuando-llamar'>¿Cuándo llamar a Fortica?</h2>
       <p id='descrip-cuando-llamar'>Todo negocio debe tener como punto de partida una buena
 planificación y una gestión efectiva. <br />
 La realidad de hoy en día nos demuestra que tener un buen

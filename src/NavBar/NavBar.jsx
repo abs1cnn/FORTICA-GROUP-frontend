@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        REVENSOR
+        F O R T I C A
       </div>
       <button className="hamburger" onClick={toggleMenu}>
         ☰
