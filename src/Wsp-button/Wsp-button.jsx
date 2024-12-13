@@ -1,5 +1,5 @@
 import React from 'react';
-import './wsp-button.css'; // Asegúrate de crear un archivo CSS para el estilo
+import './Wsp-button.css'; // Asegúrate de crear un archivo CSS para el estilo
 
 const WspButton = () => {
   const whatsappNumber = "5493541339665"; // Reemplaza con tu número de WhatsApp
