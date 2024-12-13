@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './NavBar/NavBar'
-import Footer from './Footer/footer';
+import Footer from './Footer/Footer';
 import SobreNosotros from './SobreNosotros/SobreNosotros';
 import Contacto from './Contacto/Contacto';
 import Servicios from './Servicios/servicios';
