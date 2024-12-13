@@ -126,7 +126,7 @@ p {
 
 @media (max-width: 768px) {
   .contacto-container {
-    padding: 20px;
+    padding: 5%;
   }
 
   h1 {
@@ -142,7 +142,19 @@ p {
   }
 
   .btn-whatsapp {
-    width: 100%; /* Hace que el botón ocupe todo el ancho en pantallas pequeñas */
+    width: 80%; /* Hace que el botón ocupe todo el ancho en pantallas pequeñas */
     font-size: 14px;
   }
+}
+
+/* Nueva regla para que los campos y el botón tengan el mismo largo */
+.campo input,
+.campo textarea,
+.btn-submit {
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el relleno y los bordes estén incluidos en el ancho total */
+}
+
+.btn-submit {
+  padding: 10px; /* Si deseas ajustar el padding */
 }

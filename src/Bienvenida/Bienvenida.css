@@ -11,9 +11,9 @@
 
 .bienvenida-container {
   position: absolute;
-  top: 50%;  /* Mueve el contenido hacia el 60% de la altura total */
+  top: 50%;  /* Mueve el contenido hacia el 50% de la altura total */
   left: 50%;
-  transform: translateX(-50%);  /* Centra el contenido horizontalmente */
+  transform: translate(-50%, -50%);  /* Centra el contenido tanto horizontal como verticalmente */
   text-align: center;
   padding: 0 20px;
 }
@@ -23,6 +23,8 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
+  /* Hacer el tamaño del texto responsive */
+  line-height: 1.2;
 }
 
 .bienvenida p {
@@ -30,6 +32,7 @@
   line-height: 1.6;
   margin-bottom: 40px;
   color: white;
+  /* Hacer el tamaño del texto responsive */
 }
 
 .btn-bienvenida {
@@ -45,4 +48,29 @@
 
 .btn-bienvenida:hover {
   background-color: #e6e6e6;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .bienvenida h1 {
+    font-size: 28px;  /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+
+  .bienvenida p {
+    font-size: 16px;  /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+
+  .btn-bienvenida {
+    font-size: 14px;  /* Reducir el tamaño del botón en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .bienvenida h1 {
+    font-size: 22px;  /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+  }
+
+  .bienvenida p {
+    font-size: 14px;  /* Reducir aún más el tamaño del texto en pantallas muy pequeñas */
+  }
 }
