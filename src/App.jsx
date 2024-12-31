@@ -8,6 +8,11 @@ import Servicios from './Servicios/Servicios';
 import Bienvenida from './Bienvenida/Bienvenida';
 import WspButton from './Wsp-button/Wsp-button';
 import CuandoLlamarAReventor from './Cuando-llamar/CuandoLlamarAReventor';
+import HojaMuestraProyectos from './MuestraProyectos/HojaMuestraProyectos';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 function App() {
   return (
@@ -19,9 +24,13 @@ function App() {
       <CuandoLlamarAReventor />
       <SobreNosotros />
       <Servicios />
+      <div>
+      <HojaMuestraProyectos />
+      </div>
       <Contacto />
       <WspButton />
       <Footer />
+
     </>
   );
 }

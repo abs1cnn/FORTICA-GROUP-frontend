@@ -10,7 +10,9 @@ const Bienvenida = () => {
           Nos complace tenerte con nosotros. En nuestra empresa, nos dedicamos a ofrecer
           soluciones innovadoras que transforman el futuro. Estamos comprometidos con tu éxito.
         </p>
-        <button className="btn-bienvenida">Descubre Más</button>
+        <a href="#sobrenosotros">
+          <button className="btn-bienvenida">Descubre Más</button>
+        </a>
       </div>
     </section>
   );

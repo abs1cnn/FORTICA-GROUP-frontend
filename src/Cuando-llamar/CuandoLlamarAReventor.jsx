@@ -43,9 +43,9 @@ const CuandoLlamarAReventor = () => {
     <div className="container">
       <h2 id='titulo-cuando-llamar'>¿Cuándo llamar a Fortica?</h2>
       <p id='descrip-cuando-llamar'>Todo negocio debe tener como punto de partida una buena
-planificación y una gestión efectiva. <br />
-La realidad de hoy en día nos demuestra que tener un buen
-producto o servicio no alcanza.</p>
+        planificación y una gestión efectiva. <br />
+        La realidad de hoy en día nos demuestra que tener un buen
+        producto o servicio no alcanza.</p>
       <div className="grid">
         {razones.map((razon, index) => (
           <div className="grid-item" key={index}>

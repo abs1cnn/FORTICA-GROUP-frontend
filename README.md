@@ -46,5 +46,5 @@ La página web de Fortica está diseñada para ofrecer a los usuarios una visió
 - Posee formato SPA, posiblemente migrar a disitntas hojas
 - Agregar Carrucel de proyectos
 - Agregar carrucel de multimedia, equipo de trabajo, videos y fotos laborales.
-
+- Iniciar con npm run dev
 ---
