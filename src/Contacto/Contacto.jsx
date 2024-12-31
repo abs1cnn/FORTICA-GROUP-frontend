@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './Contacto.css';
 
 const Contacto = () => {
+  // Estado para los datos del formulario
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -9,6 +11,7 @@ const Contacto = () => {
     mensaje: ''
   });
 
+  // Manejar cambios en el formulario
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -17,14 +20,46 @@ const Contacto = () => {
     }));
   };
 
+  // Enviar el correo con los datos del formulario
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    // Datos que se enviarán al template de EmailJS
+    const { nombre, email, asunto, mensaje } = formData;
+    const templateParams = {
+      from_name: nombre,
+      from_email: email,
+      subject: asunto,
+      message: mensaje
+    };
+
+    // Enviar el correo a través de EmailJS
+    emailjs
+      .send(
+        'service_nyl5nbr',  // Reemplaza con tu Service ID
+        'template_yb6c9u2',  // Reemplaza con tu Template ID
+        templateParams,      // Los datos del formulario
+        'XXyYyLbAlFXMxaYoH'  // Reemplaza con tu User ID
+      )
+      .then(
+        (response) => {
+          console.log('Correo enviado con éxito:', response);
+          alert('Correo enviado con éxito');
+          // Limpiar el formulario después de enviar el correo
+          setFormData({ nombre: '', email: '', asunto: '', mensaje: '' });
+        },
+        (error) => {
+          console.error('Error al enviar el correo:', error);
+          alert('Hubo un error al enviar el correo');
+        }
+      );
   };
 
-  const whatsappNumber = "5493541703012"; // Reemplaza con tu número de WhatsApp
-  const whatsappMessage = "Hola, estoy interesado en contactar con ustedes."; 
+  // Datos de WhatsApp
+  const whatsappNumber = "5493541703012"; // Número de WhatsApp
+  const whatsappMessage = "Hola, estoy interesado en contactar con ustedes.";
 
+  // Link para abrir WhatsApp con un mensaje predefinido
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -32,7 +67,7 @@ const Contacto = () => {
       <div className="contacto-container">
         <h1>Contacto</h1>
         <p>Si tienes alguna pregunta, no dudes en escribirnos.</p>
-        
+
         {/* Formulario de contacto */}
         <form onSubmit={handleSubmit} className="formulario-contacto">
           <div className="campo">
