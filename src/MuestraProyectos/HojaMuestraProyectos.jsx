@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick'; // Importar React Slick
 import './HojaMuestraProyectos.css';
 import Modal from '../Modal/Modal'; // Importar el Modal
+import 'font-awesome/css/font-awesome.min.css';  // Asegúrate de importar los iconos de Font Awesome
 
 const HojaMuestraProyectos = () => {
   const proyectos = [
@@ -85,8 +86,8 @@ const HojaMuestraProyectos = () => {
     slidesToScroll: 1, // Desplazar un proyecto a la vez
     centerMode: true, // Hacer el proyecto central más destacado
     centerPadding: '0', // No dejar espacio extra
-    nextArrow: <div className="custom-arrow custom-next-arrow">→</div>,
-    prevArrow: <div className="custom-arrow custom-prev-arrow">←</div>,
+    nextArrow: <div><i className="fa fa-arrow-right"></i></div>,
+    prevArrow: <div><i className="fa fa-arrow-left"></i></div>,
     responsive: [
       {
         breakpoint: 1500, // Para pantallas medianas (computadoras)

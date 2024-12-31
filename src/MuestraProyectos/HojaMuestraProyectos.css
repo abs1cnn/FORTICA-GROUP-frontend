@@ -1,7 +1,30 @@
+/* src/components/HojaMuestraProyectos/HojaMuestraProyectos.css */
+
+/* Estilo de las flechas personalizadas */
+.custom-arrow {
+  font-size: 4rem;
+  color: #c22222; /* Rojo */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.custom-next-arrow {
+  right: 20px;
+}
+
+.custom-prev-arrow {
+  left: 20px;
+}
+
+/* Estilos del carrusel */
 .proyectos-container {
   padding: 20px;
   text-align: center;
   background-color: #f9f9f9;
+  margin: 40px 0;
 }
 
 .proyectos-title {
@@ -50,78 +73,18 @@
   color: #777;
 }
 
+/* Estilo para los botones de navegación (flechas) */
 .slick-prev,
 .slick-next {
   font-size: 20px;
-  color: #0078d7;
+  color: #c22222; /* Flechas en rojo */
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  color: #005fa3;
+  color: #a10000; /* Rojo más oscuro al pasar el mouse */
 }
 
 .slick-dots {
   bottom: 10px;
-}
-
-/* src/components/HojaMuestraProyectos/HojaMuestraProyectos.css */
-
-/* Estilo de las flechas personalizadas */
-.custom-arrow {
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-
-.custom-next-arrow {
-  right: 10px;
-}
-
-.custom-prev-arrow {
-  left: 10px;
-}
-
-/* Estilos del carrusel */
-.proyectos-container {
-  margin: 50px 0;
-}
-
-.proyectos-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.proyecto-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.proyecto-card:hover {
-  background-color: #f4f4f4;
-}
-
-.proyecto-nombre {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.proyecto-descripcion {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.proyecto-estado,
-.proyecto-fecha {
-  font-size: 0.9rem;
-  color: #555;
 }
