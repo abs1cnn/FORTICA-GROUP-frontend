@@ -28,7 +28,7 @@ const Contacto = () => {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <section className="contacto">
+    <section id="contacto" className="contact-section">
       <div className="contacto-container">
         <h1>Contacto</h1>
         <p>Si tienes alguna pregunta, no dudes en escribirnos.</p>

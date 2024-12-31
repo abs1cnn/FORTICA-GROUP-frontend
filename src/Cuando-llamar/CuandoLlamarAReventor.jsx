@@ -55,9 +55,12 @@ producto o servicio no alcanza.</p>
         ))}
       </div>
       <div>
-      <a href="/contacto">
+      <div>
+      <a href="#contacto">
         <button className="contact-button">Ir a Contacto</button>
       </a>
+</div>
+
     </div>
     </div>
   );

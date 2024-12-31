@@ -3,7 +3,7 @@ import './SobreNosotros.css';  // Importamos el archivo de estilos
 
 const SobreNosotros = () => {
     return (
-        <section className="sobre-nosotros">
+        <section id="sobrenosotros" className="sobre-nosotros">
             <div className="sobre-nosotros-container">
                 <h1>Sobre Nosotros</h1>
                 <p className="descripcion">
