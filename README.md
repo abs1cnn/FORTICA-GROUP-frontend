@@ -35,7 +35,6 @@ La página web de Fortica está diseñada para ofrecer a los usuarios una visió
 | **VITE**    | Herramienta de construcción y desarrollo rápido para aplicaciones web.  |
 | **JAVASCRIPT** | Lenguaje de programación dinámico usado en frontend y backend.     |
 | **BOOTSTRAP** | Framework CSS para diseño y estilos responsivos.                    |
-| **POSTMAN** | Herramienta para pruebas y documentación de APIs.                     |
 | **NODE.JS** | Entorno de ejecución para JavaScript del lado del servidor.           |
 
 ---
